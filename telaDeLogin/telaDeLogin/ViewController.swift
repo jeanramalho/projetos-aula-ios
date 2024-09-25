@@ -27,11 +27,24 @@ class ViewController: UIViewController {
         nameTextField.delegate = self
         emailTextField.delegate = self
         passwordTextField.delegate = self
+        
+        cadastrarButton.isEnabled = false
+        cadastrarButton.setTitleColor(.white.withAlphaComponent(0.3), for: .disabled)
     }
     
     
     @IBAction func tappedCadastrarButton(_ sender: UIButton) {
         print("botão está funcionando")
+    }
+    
+    func textFieldValidade(){
+        if nameTextField.text != "" && emailTextField.text != "" && passwordTextField.text != "" {
+            
+            cadastrarButton.isEnabled = true
+        }  else {
+            
+            cadastrarButton.isEnabled = false
+        }
     }
     
 
@@ -45,6 +58,7 @@ extension ViewController: UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         textField.layer.borderWidth = 0
+        textFieldValidade()
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
