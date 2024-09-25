@@ -25,7 +25,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite seu nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKc-av-w6u">
-                                <rect key="frame" x="35" y="129" width="137" height="23"/>
+                                <rect key="frame" x="35" y="129" width="323" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -35,27 +35,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Digite seu Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSt-vS-ADb">
-                                <rect key="frame" x="35" y="221" width="137" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite seu Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSt-vS-ADb">
+                                <rect key="frame" x="35" y="221" width="323" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="teste@gmail.com1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="coN-Nr-clD">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="teste@gmail.com1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="coN-Nr-clD">
                                 <rect key="frame" x="35" y="259" width="323" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Digite sua Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQn-l5-RsP">
-                                <rect key="frame" x="35" y="313" width="185" height="23"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite sua Senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQn-l5-RsP">
+                                <rect key="frame" x="35" y="313" width="323" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cnB-Em-VPp">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cnB-Em-VPp">
                                 <rect key="frame" x="35" y="351" width="323" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnO-Nu-aD6">
                                 <rect key="frame" x="35" y="415" width="323" height="35"/>
@@ -65,29 +65,47 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Cadastre-se">
                                     <backgroundConfiguration key="background"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tappedCadastrarButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kyb-5O-vIq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="GJn-O8-Fur" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="0fu-tO-Uhe"/>
+                            <constraint firstItem="GJn-O8-Fur" firstAttribute="top" secondItem="PKc-av-w6u" secondAttribute="bottom" constant="15" id="3da-OW-FWy"/>
+                            <constraint firstItem="HSt-vS-ADb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="5hq-T3-XeT"/>
                             <constraint firstItem="PKc-av-w6u" firstAttribute="top" secondItem="Zko-VU-Clk" secondAttribute="bottom" constant="8" id="7HI-IB-rrI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GJn-O8-Fur" secondAttribute="trailing" constant="35" id="7HK-qh-gy0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="coN-Nr-clD" secondAttribute="trailing" constant="35" id="7oG-Wg-BSZ"/>
                             <constraint firstItem="Zko-VU-Clk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="9yp-n5-4LS"/>
-                            <constraint firstItem="LnO-Nu-aD6" firstAttribute="top" secondItem="cnB-Em-VPp" secondAttribute="bottom" constant="30" id="EuF-DY-3rg"/>
-                            <constraint firstItem="coN-Nr-clD" firstAttribute="top" secondItem="HSt-vS-ADb" secondAttribute="bottom" constant="15" id="IhT-8I-hFp"/>
-                            <constraint firstItem="GJn-O8-Fur" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="PqV-Wv-Mu3"/>
-                            <constraint firstItem="cnB-Em-VPp" firstAttribute="top" secondItem="CQn-l5-RsP" secondAttribute="bottom" constant="15" id="RJh-7u-lc3"/>
-                            <constraint firstItem="PKc-av-w6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="S50-U5-rub"/>
+                            <constraint firstItem="cnB-Em-VPp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Ant-ZH-gPb"/>
+                            <constraint firstItem="PKc-av-w6u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="GeT-uV-5ge"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LnO-Nu-aD6" secondAttribute="trailing" constant="35" id="M5R-rV-Xxy"/>
+                            <constraint firstItem="LnO-Nu-aD6" firstAttribute="top" secondItem="cnB-Em-VPp" secondAttribute="bottom" constant="30" id="QRv-h7-DPs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HSt-vS-ADb" secondAttribute="trailing" constant="35" id="Ybc-mM-v37"/>
+                            <constraint firstItem="coN-Nr-clD" firstAttribute="top" secondItem="HSt-vS-ADb" secondAttribute="bottom" constant="15" id="Zeb-vq-5VM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CQn-l5-RsP" secondAttribute="trailing" constant="35" id="b2R-MA-fm4"/>
+                            <constraint firstItem="PKc-av-w6u" firstAttribute="top" secondItem="Zko-VU-Clk" secondAttribute="bottom" constant="20" id="dMK-G0-GAo"/>
                             <constraint firstItem="Zko-VU-Clk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="dqn-26-7vt"/>
-                            <constraint firstItem="CQn-l5-RsP" firstAttribute="top" secondItem="coN-Nr-clD" secondAttribute="bottom" constant="20" id="f5m-l1-YIO"/>
-                            <constraint firstItem="GJn-O8-Fur" firstAttribute="top" secondItem="PKc-av-w6u" secondAttribute="bottom" constant="15" id="gtH-Lz-qVJ"/>
-                            <constraint firstItem="LnO-Nu-aD6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="ivv-ES-aka"/>
+                            <constraint firstItem="coN-Nr-clD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="gb1-iv-DRA"/>
+                            <constraint firstItem="CQn-l5-RsP" firstAttribute="top" secondItem="coN-Nr-clD" secondAttribute="bottom" constant="20" id="hFY-lM-2pw"/>
+                            <constraint firstItem="HSt-vS-ADb" firstAttribute="top" secondItem="GJn-O8-Fur" secondAttribute="bottom" constant="20" id="ixF-zo-3T4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zko-VU-Clk" secondAttribute="trailing" constant="25" id="l8n-MK-iav"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LnO-Nu-aD6" secondAttribute="trailing" constant="35" id="ocd-nr-QHM"/>
-                            <constraint firstItem="HSt-vS-ADb" firstAttribute="top" secondItem="GJn-O8-Fur" secondAttribute="bottom" constant="20" id="uR5-YF-NlU"/>
-                            <constraint firstItem="coN-Nr-clD" firstAttribute="top" secondItem="HSt-vS-ADb" secondAttribute="bottom" constant="15" id="zoJ-ED-QtS"/>
+                            <constraint firstItem="LnO-Nu-aD6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="mxi-TV-OOU"/>
+                            <constraint firstItem="CQn-l5-RsP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="npA-R2-yO2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GJn-O8-Fur" secondAttribute="trailing" constant="35" id="sdj-o7-F5t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cnB-Em-VPp" secondAttribute="trailing" constant="35" id="v79-jH-eDd"/>
+                            <constraint firstItem="cnB-Em-VPp" firstAttribute="top" secondItem="CQn-l5-RsP" secondAttribute="bottom" constant="15" id="ycB-O4-0Iu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PKc-av-w6u" secondAttribute="trailing" constant="35" id="zW9-yI-Drr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cadastrarButton" destination="LnO-Nu-aD6" id="l0o-gg-hId"/>
+                        <outlet property="emailTextField" destination="coN-Nr-clD" id="BUz-82-vw8"/>
+                        <outlet property="nameTextField" destination="GJn-O8-Fur" id="XrD-ZW-X5p"/>
+                        <outlet property="passwordTextField" destination="cnB-Em-VPp" id="8LC-IO-JUK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
