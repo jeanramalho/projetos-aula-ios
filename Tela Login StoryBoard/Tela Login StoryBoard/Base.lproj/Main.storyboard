@@ -33,22 +33,40 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9x-zz-qXY">
+                                <rect key="frame" x="40" y="278" width="313" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Enviar"/>
+                                <connections>
+                                    <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="itp-cR-CT1"/>
+                                    <action selector="enviarButtom:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dFX-pb-tso"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m9x-zz-qXY" secondAttribute="trailing" constant="40" id="4V2-sq-q3l"/>
+                            <constraint firstItem="m9x-zz-qXY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="6yu-5L-vID"/>
                             <constraint firstItem="bwx-ii-nFS" firstAttribute="top" secondItem="ZpU-5s-bXw" secondAttribute="bottom" constant="25" id="Cc0-H3-Y4f"/>
                             <constraint firstItem="run-VE-5s0" firstAttribute="top" secondItem="bwx-ii-nFS" secondAttribute="bottom" constant="35" id="DUA-8J-qnw"/>
                             <constraint firstItem="ZpU-5s-bXw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="FmF-ZE-Dev"/>
                             <constraint firstItem="run-VE-5s0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ORw-6c-syQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m9x-zz-qXY" secondAttribute="trailing" constant="40" id="Ui5-oP-pAz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bwx-ii-nFS" secondAttribute="trailing" constant="40" id="fuk-04-dl4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="run-VE-5s0" secondAttribute="trailing" constant="40" id="gph-Yq-hs6"/>
                             <constraint firstItem="ZpU-5s-bXw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="huv-PA-U46"/>
                             <constraint firstItem="bwx-ii-nFS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="jPH-A3-zk5"/>
+                            <constraint firstItem="m9x-zz-qXY" firstAttribute="top" secondItem="run-VE-5s0" secondAttribute="bottom" constant="30" id="niu-ZK-nUv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZpU-5s-bXw" secondAttribute="trailing" constant="25" id="oKS-dn-sLY"/>
+                            <constraint firstItem="m9x-zz-qXY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="uie-Yo-a0K"/>
+                            <constraint firstItem="m9x-zz-qXY" firstAttribute="top" secondItem="run-VE-5s0" secondAttribute="bottom" constant="30" id="xXx-Gr-zXh"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginLabel" destination="ZpU-5s-bXw" id="gZt-Uh-mY2"/>
+                        <outlet property="loginTextLabel" destination="ZpU-5s-bXw" id="LS7-LQ-Gr4"/>
+                        <outlet property="nomeTextField" destination="bwx-ii-nFS" id="suU-ld-Nty"/>
                         <outlet property="textLabelLogin" destination="ZpU-5s-bXw" id="cFL-CS-DFH"/>
                     </connections>
                 </viewController>
