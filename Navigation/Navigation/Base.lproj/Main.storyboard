@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVg-kU-Wyf">
+                                <rect key="frame" x="157" y="408.66666666666669" width="79.333333333333314" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tela 02"/>
+                                <connections>
+                                    <segue destination="too-Av-yeq" kind="show" id="Ak5-eq-x3a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pVg-kU-Wyf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="P9r-am-Cry"/>
+                            <constraint firstItem="pVg-kU-Wyf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wMu-v8-7aU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-283" y="-49"/>
+        </scene>
+        <!--Tela02 View Controller-->
+        <scene sceneID="99L-UV-XQ1">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="too-Av-yeq" customClass="Tela02ViewController" customModule="Navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ROY-ks-HTT">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyR-4n-t5I">
+                                <rect key="frame" x="133.66666666666666" y="408.66666666666669" width="125.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Voltar Tela 01"/>
+                                <connections>
+                                    <action selector="goBackTela01:" destination="too-Av-yeq" eventType="touchUpInside" id="30y-6c-B6s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XvP-5I-eIn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vyR-4n-t5I" firstAttribute="centerY" secondItem="ROY-ks-HTT" secondAttribute="centerY" id="HJC-Nf-gBr"/>
+                            <constraint firstItem="vyR-4n-t5I" firstAttribute="centerX" secondItem="ROY-ks-HTT" secondAttribute="centerX" id="OOY-qg-BTo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="L1l-ZT-5ID"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4K-GW-5qJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="526" y="-49"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
