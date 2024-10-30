@@ -19,7 +19,11 @@ class CustomTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        titleLabel.text = "Jean"
+        
+    }
+    
+    func setupCell(title: String) {
+        titleLabel.text = title
     }
     
 }
