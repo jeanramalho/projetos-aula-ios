@@ -17,29 +17,29 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAE-AZ-d4R">
-                        <rect key="frame" x="155" y="58" width="42" height="21"/>
+                        <rect key="frame" x="145" y="58" width="115" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nEa-4u-ger">
-                        <rect key="frame" x="15" y="8" width="120" height="120"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nEa-4u-ger">
+                        <rect key="frame" x="15" y="13.666666666666671" width="110" height="110"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="120" id="9nh-nc-HV1"/>
+                            <constraint firstAttribute="height" constant="110" id="0KJ-Zf-tFi"/>
+                            <constraint firstAttribute="width" constant="110" id="bpF-36-x5Y"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="hAE-AZ-d4R" firstAttribute="leading" secondItem="nEa-4u-ger" secondAttribute="trailing" constant="20" id="3gd-sT-EcE"/>
-                    <constraint firstItem="nEa-4u-ger" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="5Jx-1S-xCz"/>
-                    <constraint firstItem="nEa-4u-ger" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="A28-C8-aVF"/>
+                    <constraint firstItem="hAE-AZ-d4R" firstAttribute="leading" secondItem="nEa-4u-ger" secondAttribute="trailing" constant="20" id="6vY-Kj-jfe"/>
+                    <constraint firstItem="nEa-4u-ger" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7Ol-Fs-Bsl"/>
                     <constraint firstItem="hAE-AZ-d4R" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="CeY-7E-WYh"/>
                     <constraint firstItem="hAE-AZ-d4R" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CwX-4d-SXI"/>
-                    <constraint firstItem="nEa-4u-ger" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EN7-Zp-SKD"/>
-                    <constraint firstItem="nEa-4u-ger" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="PaI-kb-q1c"/>
+                    <constraint firstItem="hAE-AZ-d4R" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="OWq-Oy-NcU"/>
                     <constraint firstItem="hAE-AZ-d4R" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PyL-Zu-dkh"/>
                     <constraint firstItem="hAE-AZ-d4R" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Q0k-Op-D7m"/>
-                    <constraint firstItem="nEa-4u-ger" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="e3e-xh-Uu2"/>
+                    <constraint firstItem="nEa-4u-ger" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="oUC-2X-YX5"/>
+                    <constraint firstItem="hAE-AZ-d4R" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yfN-Yj-Wuh"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
