@@ -25,7 +25,8 @@ class CarTableViewCell: UITableViewCell {
     }
     
     func setupCell(_ data: Car) {
-        
+        brandLabel.text = data.brand
+        carImageView.image = data.brandImage
     }
 
     
