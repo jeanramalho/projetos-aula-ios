@@ -43,7 +43,7 @@
         <!--Item-->
         <scene sceneID="WhB-U1-Tis">
             <objects>
-                <viewController id="C7K-zb-u0o" customClass="Tela03" sceneMemberID="viewController">
+                <viewController id="C7K-zb-u0o" customClass="Tela03" customModule="PrimeitoAppTabBarCurso" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RCS-jH-ov0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
