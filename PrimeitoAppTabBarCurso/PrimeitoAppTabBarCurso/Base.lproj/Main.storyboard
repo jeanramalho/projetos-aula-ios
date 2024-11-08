@@ -11,14 +11,14 @@
         <!--Item 2-->
         <scene sceneID="GzJ-tm-y1Y">
             <objects>
-                <viewController id="Qma-Oz-CoY" sceneMemberID="viewController">
+                <viewController id="Qma-Oz-CoY" customClass="Tela02" customModule="PrimeitoAppTabBarCurso" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jWC-Ep-dO4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="if5-E5-ibO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="RFs-7e-ULR"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" image="eraser" catalog="system" id="RFs-7e-ULR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L5t-7v-tHX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -27,14 +27,14 @@
         <!--Item 1-->
         <scene sceneID="lRc-N4-I0T">
             <objects>
-                <viewController id="s4l-5K-7tI" sceneMemberID="viewController">
+                <viewController id="s4l-5K-7tI" customClass="Tela01" customModule="PrimeitoAppTabBarCurso" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nfh-Cd-Qnw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="1Fv-lk-FAI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="7vG-0M-mii"/>
+                    <tabBarItem key="tabBarItem" title="Item 1" image="pencil" catalog="system" id="7vG-0M-mii"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AuE-nh-cve" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,14 +43,14 @@
         <!--Item-->
         <scene sceneID="WhB-U1-Tis">
             <objects>
-                <viewController id="C7K-zb-u0o" sceneMemberID="viewController">
+                <viewController id="C7K-zb-u0o" customClass="Tela03" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RCS-jH-ov0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="gOi-qC-quN"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="2cP-aH-fNB"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="rectangle.portrait.and.arrow.right" catalog="system" id="2cP-aH-fNB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DYs-sJ-ciz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -59,7 +59,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="MqI-da-STm">
             <objects>
-                <tabBarController id="g0a-x7-n26" sceneMemberID="viewController">
+                <tabBarController id="g0a-x7-n26" customClass="TabBarController" customModule="PrimeitoAppTabBarCurso" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dwc-1P-57J">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -77,6 +77,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="eraser" catalog="system" width="128" height="119"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

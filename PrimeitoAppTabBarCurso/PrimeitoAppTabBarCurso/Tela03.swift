@@ -10,8 +10,8 @@ import UIKit
 class Tela03: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+        super.viewDidLoad() 
+        view.backgroundColor = .black
         // Do any additional setup after loading the view.
     }
     
